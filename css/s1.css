@@ -1,0 +1,221 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Georgia", American Typewriter, sans-serif;
+	font-weight: 300;
+	background: white;
+	color: #181818;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 300;
+}
+
+#whole-site{
+	display: flex;
+	flex-direction: row;
+}
+
+#leftpart{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	min-width: 350px;
+	
+}
+.header {
+    height:40px;
+	border-bottom: none;
+}
+.header .head {
+	font-family: Georgia, serif;
+	font-weight: bold;
+	font-size:25px;
+	text-align:center;
+	color: rgb(3, 78, 19);
+	margin-left:auto;
+    margin-right:auto;
+}
+
+#rightpart{
+	flex: 1;
+}
+
+#signin{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+}
+
+#signin form{
+	width: 80%;
+	padding-bottom: 1rem;
+}
+
+#signin .logo{
+	margin-bottom: none;
+}
+
+#signin .logo img{
+	width: 300px
+}
+
+#signin label{
+	font-size: 0.9rem;
+	line-height: 2rem;
+	font-weight: 400;
+}
+
+#signin .text{
+	margin-bottom: 1.3rem;
+	width: 100%;
+	border-radius: 2px;
+	border: 1px solid #555;
+	padding: 0.5rem 1rem;
+	line-height: 1.3rem;
+}
+
+#signin .login-btn{
+	width: 100%;
+}
+
+#signin .signin-btn, .or, .links{
+	width: 80%;
+}
+
+
+#signin .or{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1.2rem;
+	align-items: center;
+}
+
+#signin .or .hrbar{
+	flex: auto;
+	border: none;
+	height: 1px;
+	background: #888;
+	margin-bottom: 1rem;
+}
+
+#signin .or span{
+	color: #888;
+	padding: 0 0.8rem;
+}
+
+#showcase{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+}
+
+#showcase .showcase-text{
+	margin-top:5%;
+	position:relative;
+	font-size:20px;
+	font-family: Georgia, serif;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 0.2rem;
+	text-align: center;
+	color: white;
+	width: 100%;
+}
+
+
+#leftfooter{
+	color: #888;
+	font-size: 0.8rem;
+	max-width: 80%;
+	text-align: center;
+}
+
+#leftfooter a{
+	color: grey;
+	text-decoration: underline;
+}
+
+.login-btn{
+	padding: 0.7rem 1rem;
+	height: 2.7rem;
+	display: block;
+	border: 0;
+	border-radius: 2px;
+	font-family: "Georgia", American Typewriter, sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	background: rgb(2, 51, 18);
+	cursor: pointer;
+	text-align: center;
+	color: white;	
+}
+
+.signin-btn{
+	padding: 0.7rem 1rem;
+	height: 2.7rem;
+	display: block;
+	border: none;
+	border-radius: 2px;
+	font-weight: 300;
+	text-decoration: none;
+	color: white;
+	background: rgb(2, 51, 18);
+	cursor: pointer;
+	text-align: center;	
+}
+
+.error {
+	width: auto; 
+	font-size:15px;
+	color: #a94442;  
+	text-align: center;
+}
+
+@media (min-width: 1200px) {
+  #leftpart {s
+    flex: 4;
+  }
+
+  #rightpart {
+    flex: 6;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  #rightpart {
+    display: none;
+  }
+
+  #leftpart {
+    justify-content: start;
+    margin-top: 4vh;
+  }
+
+  #signin .logo {
+    margin-bottom: 2vh;
+  }
+
+  #signin .text {
+    margin-bottom: 0.7rem;
+  }
+
+  #leftfooter {
+    padding-top: 1rem;
+  }
+}

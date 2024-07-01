@@ -1,0 +1,78 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: helvetica, sans-serif;
+  font-weight: 400;
+
+}
+
+.welcome{
+  color: #023312;
+}
+
+#out {
+  color: white;
+  text-decoration:none;
+}
+
+#out:hover{
+  color: #023312;
+  cursor: pointer;
+}
+
+.img1, .img2, .img3{
+  position: relative;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.img1 {
+  background-image: url("../img/img1.jpg");
+  min-height: 100%;
+}
+
+.img2 {
+  background-image: url("../img/img2.jpg");
+  min-height: 400px;
+}
+
+.img3 {
+  background-image: url("../img/img3.jpg");
+  min-height: 400px;
+}
+
+
+.section3{
+  padding: 10px 30px;
+}
+
+.section{
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section2{
+  background-color: #023312;
+  color: white;
+}
+
+
+
+.imgtext{
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.imgtext .textbackground{
+  color: white;
+}
